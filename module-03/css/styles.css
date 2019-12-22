@@ -1,24 +1,16 @@
-
-.menu_item{
-    display: inline-block;
-    margin: 60px ;
-}
-
-.menu_list{
+.body{
     text-align: center;
-}
-.item{
-    font-size: 14px;
-    font-family: "Ubuntu", sans-serif;
-    text-transform: uppercase ;
+    width: 100%;
+    height: 100%;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
 }
 
-a{
+.notation{
     font-size: 14px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: "Playfair Displa", serif;
-    color: rgb(98, 98, 98);
+    font-family: "Ubuntu Light", sans-serif;
+    text-transform: uppercase ;
+    color: rgb(180, 173, 158);
 }
 
 h2{
@@ -26,38 +18,66 @@ h2{
     font-weight: normal;
 }
 
-footer{
-    text-align: center;
-    height: 130px;
-    vertical-align: top;
-    color: rgb(98, 98, 98);
-}
-
-button{
-    font-family: "Playfair Display", serif;
+.btn{
+    background: transparent;
+    border: 1px solid #626262;
+    padding: 1rem 2rem;
     font-size: 20px;
-    width: 164px;
-    height: 60px;
-    background-color: #fff;
+    font-family: "Playfair Display";
+    color: #626262;
+    line-height: 1.2;
+    margin: 30px auto 70px;
 }
 
+.wrapper{
+    display: inline-block;
+    width: 960px;
+    /* margin: 0 auto;
+    background-color: greenyellow; */
+    padding-inline-start: 0px;
+}
 
-.main{
-    margin: 89px;
-    width: 1200px;
+.menu_item{
+    display: inline-block;
+    list-style-type: none;
+    width: 421px;
+    text-align: left;
     font-size: 14px;
     line-height: 24px;
-    font-family: "Playfair Display", serif;
-    color: rgb(98, 98, 98);
+    margin:0px 28px;
+    /* background-color: skyblue; */
 }
 
-.row_item{
-    width: 421px;
-    margin: 61px;
-    display: inline-block;
-    text-align: left;
-}
-
-.row{
+.navigation{
+    margin: 0 auto;
+    list-style-type: none;
     text-align: center;
+    /* background-color: rgb(172, 31, 172); */
+}
+
+.nav_item{
+    display: inline-block;
+    margin: 70px 4rem;
+    /* background-color: tomato; */
+}
+
+/* .header_menu{
+    padding-inline-start: 0px;
+} */
+
+.main{
+    width: 100%;
+    padding-inline-start: 0px;
+    /* background-color: salmon; */
+}
+
+a:hover{
+    color: rgb(3, 169, 244);
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(98, 98, 98);
 }
