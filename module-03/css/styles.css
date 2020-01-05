@@ -26,26 +26,33 @@ h2{
     font-family: "Playfair Display";
     color: #626262;
     line-height: 1.2;
-    margin: 30px auto 70px;
+    margin: 0px auto 70px;
 }
 
 .wrapper{
     display: inline-block;
-    width: 960px;
-    /* margin: 0 auto;
-    background-color: greenyellow; */
     padding-inline-start: 0px;
+    font-size: 0;
+    width: 900px;
+    /* background-color: greenyellow; */
 }
 
 .menu_item{
     display: inline-block;
     list-style-type: none;
     width: 421px;
+    height: auto;
     text-align: left;
+    vertical-align: top;
+    margin: 50px 0 70px;
+    /* margin-bottom: 120px; */
     font-size: 14px;
     line-height: 24px;
-    margin:0px 28px;
     /* background-color: skyblue; */
+}
+
+.left {
+    margin-right: 58px;
 }
 
 .navigation{
@@ -67,7 +74,7 @@ h2{
 
 .main{
     width: 100%;
-    padding-inline-start: 0px;
+    /* padding-inline-start: 0px; */
     /* background-color: salmon; */
 }
 
@@ -81,3 +88,4 @@ a{
     text-transform: uppercase;
     color: rgb(98, 98, 98);
 }
+
