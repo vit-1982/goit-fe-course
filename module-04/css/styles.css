@@ -30,10 +30,6 @@ body {
     color: #0f0101;
 }
 
-a:hover {
-    color: #1abc9c;
-}
-
 a:last-child {
     margin-right: 0;
 }
@@ -44,19 +40,10 @@ a:last-child {
 
 .logo {
     float: left;
-    text-decoration: none;
-    text-transform: uppercase;
     margin-top: 8px;
     margin-left: 0;
-    font-family: Roboto Light;
-    color: #555252;
     font-size: 30px;
     /* background-color: chartreuse; */
-}
-
-.logo::first-letter {
-    font-family: Roboto Black;
-    color: #1abc9c;
 }
 
 .product_list img {
@@ -78,18 +65,13 @@ a:last-child {
     margin: 0 auto;
     margin-bottom: 81px;
     /* background-color: burlywood; */
-    
 }
 
-.product_item a {
-    color: #fff;
-}
-
-.product_item a:hover .name_of_prod {
+.product_item:hover .name_of_prod {
     background-color: #1abc9c;
 }
 
-.product_item a:hover .price {
+.product_item:hover .price {
     background-color: #7fd9c7;
 }
 
