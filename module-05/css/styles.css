@@ -76,14 +76,13 @@ img {
 
 .button_box {
     position: relative;
-    ;
     max-width: 1110px;
     height: 600px;
     margin: auto;
     z-index: 10;
 }
 
-.sl_ctrl {
+.slider-button {
     background-color: rgb(78, 198, 171, 0.651);
     position: absolute;
     top: 50%;
@@ -94,16 +93,39 @@ img {
     height: 104px;
 }
 
-.sl_ctrl:hover {
+.slider-button:hover {
     background-color: rgb(26, 188, 156);
 }
 
-.sl_ctrl_prev {
+.left-arrow {
     left: 0;
 }
 
-.sl_ctrl_next {
+.right-arrow {
     right: 0;
+}
+
+.right-arrow::before,
+.left-arrow::before {
+  content: "";
+  --s: 28px;
+  --bd: 4px solid #fff;
+  width: var(--s);
+  height: var(--s);
+  border-left:  var(--bd);
+  border-top:  var(--bd);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.left-arrow::before {
+    left: 55%;
+}
+
+.right-arrow::before {
+    right: 40%;
+    transform: translateY(-50%) rotate(135deg);
 }
 
 .slides {
@@ -157,7 +179,18 @@ img {
     /* background-color: plum; */
 }
 
-.product_item:hover .bg {
+.product_item::before {
+    content: '';
+    position: absolute;
+    width: 235px;
+    height: 262px;
+    border: 10px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    /* opacity: 0.549; */
+    opacity: 0;    
+}
+
+.product_item:hover::before{
     opacity: 0.549;
 }
 
@@ -255,16 +288,6 @@ footer {
 
 span {
     color: #46bfa9;
-}
-
-.bg {
-    position: absolute;
-    width: 235px;
-    height: 262px;
-    border: 10px solid rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    /* opacity: 0.549; */
-    opacity: 0;
 }
 
 .card_icons {
