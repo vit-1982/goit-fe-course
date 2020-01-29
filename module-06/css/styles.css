@@ -49,6 +49,7 @@ ul {
 .nav_item:hover {
     color: #f38181;
     border-color: #f38181;
+    cursor: pointer;
 }
 
 h2 {
@@ -124,6 +125,14 @@ h4 {
 
 .service_item a {
     text-decoration: none;
+}
+
+.service_item:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s linear;
+}
+.service_item:active {
+    transform: scale(0.9);
 }
 
 .service_item:hover a {
@@ -262,6 +271,13 @@ h4 {
 
 .social_item:hover {
     background-color: #95e1d3;
+    transition: transform 0.2s linear;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.social_item:active {
+    transform: scale(0.8);
     transition: transform 0.2s linear;
 }
 
