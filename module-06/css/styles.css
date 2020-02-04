@@ -23,8 +23,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 29px 0;
-    padding-bottom: 93px;
+    margin: 29px 0 93px;
 }
 
 .nav_menu {
@@ -40,7 +39,7 @@ ul {
 }
 
 .nav_item {
-    padding: 12px 0;
+    padding-bottom: 12px;
     border-bottom: 3px solid;
     border-color: transparent;
     transition: color 0.2s linear, border 0.2s linear;
@@ -56,7 +55,7 @@ h2 {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
     color: #333333;
-    padding-bottom: 13px;
+    margin-bottom: 13px;
 }
 
 h3 {
@@ -82,11 +81,11 @@ h3::after {
 }
 
 .services h3{
-    padding-bottom: 108px;
+    margin-bottom: 108px;
 }
 
 .team h3 {
-    padding-bottom: 84px;
+    margin-bottom: 84px;
 }
 
 .service_menu {
@@ -101,10 +100,9 @@ h3::after {
 }
 
 .service_item {
-    max-width: 381px;
+    max-width: 350px;
     text-align: left;
-    padding-left: 81px;
-    padding-right: 10px;
+    padding-left: 60px;
     box-sizing: border-box;
     margin-bottom: 93px;
     position: relative;
@@ -134,7 +132,7 @@ h4 {
     height: 32px;
     background-repeat: no-repeat;
     background-position: center;
-    left: 28px;
+    left: 0;
     top: 2px;
 }
 
@@ -312,22 +310,29 @@ h4 {
     background-image: url('../icon/instagram.png');
 }
 
-footer .wrapper {
+.footbox {
+    border-top: 1px solid #e5e5e5;
+
+}
+
+.footcont {
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #e5e5e5;
-    padding-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-.info {
+
+.info, .copy {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
+    color: #333333
 }
 
-.info span {
+
+.red {
     color: #f38181;
 }
 
@@ -363,3 +368,4 @@ input {
 ::placeholder {
     color: #cccccc;
 }
+
