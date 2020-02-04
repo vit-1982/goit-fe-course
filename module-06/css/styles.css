@@ -311,16 +311,16 @@ h4 {
 }
 
 .footbox {
+    max-width: 1200px;
     border-top: 1px solid #e5e5e5;
-
+    margin: 0 auto;
 }
 
 .footcont {
-    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
+    margin: 10px auto;
 }
 
 
