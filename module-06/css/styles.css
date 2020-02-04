@@ -23,7 +23,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 29px 0 93px;
+    margin: 29px auto 93px;
 }
 
 .nav_menu {
