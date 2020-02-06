@@ -11,23 +11,24 @@
 
 <body>
     <header>
-        <nav class="wrapper navigation">
-            <div class="logo"><img src="icon/MoGo.png" alt="LOGO"></div>
-            <ul class="nav_menu">
-                <li class="nav_item"><a href="#"></a>about</li>
-                <li class="nav_item"><a href="#"></a>service</li>
-                <li class="nav_item"><a href="#"></a>work</li>
-                <li class="nav_item"><a href="#"></a>blog</li>
-                <li class="nav_item"><a href="#"></a>contact</li>
-            </ul>
-
-        </nav>
+        <div class="wrapper">
+            <nav class="navigation">
+                <div class="logo"><img src="icon/MoGo.png" alt="LOGO"></div>
+                <ul class="nav_menu">
+                    <li class="nav_item"><a href="#"></a>about</li>
+                    <li class="nav_item"><a href="#"></a>service</li>
+                    <li class="nav_item"><a href="#"></a>work</li>
+                    <li class="nav_item"><a href="#"></a>blog</li>
+                    <li class="nav_item"><a href="#"></a>contact</li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="services">
+    <section>
         <div class="wrapper">
             <h2>We work with</h2>
-            <h3>amazing services</h3>
+            <h3 class="services">amazing services</h3>
             <ul class="service_menu">
                 <li class="service_item icon_clock">
                     <a href="#">
@@ -69,10 +70,10 @@
         </div>
     </section>
 
-    <section class="team">
+    <section>
         <div class="wrapper">
             <h2>Who we are</h2>
-            <h3>meet our team</h3>
+            <h3 class="team">meet our team</h3>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut
@@ -137,10 +138,12 @@
     </section>
 
     <footer>
-        <div class="footbox">
+        <div class="wrapper footbox">
             <div class="footcont">
-                <p class="info"><span class="copy">&#169;</span>2016 MoGo free PSD template by <span
-                        class="red">Laaqiq</span></p>
+                <div>
+                    <p class="info"><span class="copy">&#169;</span> 2016 MoGo free PSD template by <span
+                            class="red">Laaqiq</span></p>
+                </div>
                 <div class="footer_left">
                     <input type="email" placeholder="Your Email...">
                     <button>Subscribe</button>

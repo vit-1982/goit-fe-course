@@ -15,6 +15,10 @@ ul {
     text-align: center;
 }
 
+header .wrapper {
+    margin: 29px auto 93px;
+}
+
 .logo {
     display: inline-block;
 }
@@ -23,7 +27,6 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin: 29px auto 93px;
 }
 
 .nav_menu {
@@ -80,11 +83,11 @@ h3::after {
     transform: translateX(-50%);
 }
 
-.services h3{
+.services {
     margin-bottom: 108px;
 }
 
-.team h3 {
+.team {
     margin-bottom: 84px;
 }
 
@@ -311,9 +314,7 @@ h4 {
 }
 
 .footbox {
-    max-width: 1200px;
     border-top: 1px solid #e5e5e5;
-    margin: 0 auto;
 }
 
 .footcont {
@@ -336,10 +337,10 @@ h4 {
     color: #f38181;
 }
 
-.footer_left {
+/* .footer_left {
     display: flex;
     min-width: 380px;
-}
+} */
 
 button {
     border: none;
@@ -357,12 +358,13 @@ button:active {
 }
 
 input {
-    flex-grow: 2;
+    /* flex-grow: 2; */
+    width: 230px;
     border: 1px solid #e5e5e5;
     border-right: transparent;
     font-family: 'Roboto LightItalic', sans-serif;
     font-size: 15px;
-    padding-left: 12px;
+    padding: 10px 0 10px 12px;
 }
 
 ::placeholder {
