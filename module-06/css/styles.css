@@ -31,9 +31,7 @@ header .wrapper {
 
 .nav_menu {
     display: flex;
-    min-width: 491px;
     flex-wrap: wrap;
-    justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     color: #95e1d3;
@@ -46,6 +44,10 @@ header .wrapper {
     border-bottom: 3px solid;
     border-color: transparent;
     transition: color 0.2s linear, border 0.2s linear;
+}
+
+.nav_item:not(:last-child) {
+    margin-right: 58px;
 }
 
 .nav_item:hover {
@@ -319,6 +321,7 @@ h4 {
 
 .footcont {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 10px auto;
@@ -337,10 +340,9 @@ h4 {
     color: #f38181;
 }
 
-/* .footer_left {
+.footer_left {
     display: flex;
-    min-width: 380px;
-} */
+}
 
 button {
     border: none;
@@ -357,12 +359,12 @@ button:active {
     transform: scale(0.9);
 }
 
-input {
-    /* flex-grow: 2; */
+.input {
     width: 230px;
     border: 1px solid #e5e5e5;
     border-right: transparent;
     font-family: 'Roboto LightItalic', sans-serif;
+    font-style: italic;
     font-size: 15px;
     padding: 10px 0 10px 12px;
 }
