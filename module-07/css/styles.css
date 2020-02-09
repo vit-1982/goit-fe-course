@@ -1,0 +1,296 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+        url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-900 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Black'), local('Montserrat-Black'),
+        url('../fonts/montserrat-v14-latin-900.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/montserrat-v14-latin-900.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* pt-serif-italic - latin */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: local('PT Serif Italic'), local('PTSerif-Italic'),
+         url('../fonts/pt-serif-v11-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/pt-serif-v11-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* pt-serif-700italic - latin */
+  @font-face {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 700;
+    src: local('PT Serif Bold Italic'), local('PTSerif-BoldItalic'),
+         url('../fonts/pt-serif-v11-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/pt-serif-v11-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper,
+.bottom {
+    max-width: 940px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 44px auto 100px;
+}
+
+.nav_menu {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #222222;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav_item {
+    transition: color 0.2s linear, border 0.2s linear;
+}
+
+.nav_item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav_item:hover {
+    color: #fed136;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 75px;
+}
+
+h3 {
+    font-family: "PT Serif";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 75px;
+}
+
+.service_menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service_item {
+    max-width: 290px;
+    text-align: center;
+    cursor: pointer;
+    /* box-sizing: border-box; */
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #222222;
+    margin-bottom: 13px;
+}
+
+.service_item p {
+    font-family: 'Roboto Slab';
+    font-size: 14px;
+    color: #777777;
+}
+
+.service_item::before {
+    content: '';
+    display: block;
+    width: 74px;
+    height: 74px;
+    border: 4px solid #fed136;
+    border-radius: 50%;
+    margin: 0 auto 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.service_item a {
+    text-decoration: none;
+}
+
+.service_item:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s linear;
+}
+.service_item:active {
+    transform: scale(0.9);
+}
+
+.icon_basket::before {
+    background-image: url('../img/Icon-Basket.png');
+}
+
+.icon_laptop::before {
+    background-image: url('../img/Icon-Laptop.png');
+}
+
+.icon_locked::before {
+    background-image: url('../img/Icon-Locked.png');
+}
+
+section .wrapper {
+    margin-bottom: 120px;
+}
+
+.bottom_section {
+    background: #222222;
+    /* background-image: url(../img/Map\ Image.png); */
+    min-height: 677px;
+    position: relative;
+}
+
+.bg_img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.bottom h2 {
+    color: #ffffff;
+    padding-top: 93px;
+}
+
+.to_do_part input {
+    width: 457px;
+    height: 52px;
+    border-radius: 2px;
+    border: 1px solid rgb(204, 204, 204);
+    box-sizing: border-box;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 459px;
+    height: 211px;
+}
+  
+.to_do_part textarea {
+    width: 457px;
+    height: 211px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid rgb(204, 204, 204);
+    box-sizing: border-box;
+    padding: 19px;
+}
+
+button {
+    display: block;
+    border: none;
+    background-color: rgb(254, 209, 54);
+    border-radius: 3px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 21px 45px;
+    margin: auto;
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.9);
+    transition: transform 0.2s linear;
+}
+
+
+.to_do_part {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 29px;
+}
+
+.to_do_part input::placeholder,
+.to_do_part textarea::placeholder {
+    text-indent: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #bbbbbb;
+    text-transform: uppercase;
+}
+
+.to_do_part textarea::placeholder {
+    text-indent: 0;
+}
+  
+.inputs input[name="name"]:valid,
+.inputs input[name="email"]:valid,
+.to_do_part textarea[name="message"]:valid {
+    outline-color: green;
+}
+
+.inputs input[name="name"]:invalid,
+.inputs input[name="email"]:invalid,
+.to_do_part textarea[name="message"]:invalid {
+    outline-color: red;
+}
+
+
+
+  
+
+  
