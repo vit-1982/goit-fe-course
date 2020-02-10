@@ -66,7 +66,7 @@ ul {
 }
 
 .wrapper {
-    max-width: 940px;
+    width: 940px;
     margin: 0 auto;
     text-align: center;
 }
@@ -195,9 +195,9 @@ h4 {
     display: flex;
 }
 
-form {
-    padding-top: 93px;
-    padding-bottom: 115px;
+.form {
+    margin-top: 93px;
+    margin-bottom: 115px;
 }
 
 .bottom_section h2 {
@@ -224,8 +224,6 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* max-width: 459px; */
-    /* height: 211px; */
 }
   
 .to_do_part textarea {
