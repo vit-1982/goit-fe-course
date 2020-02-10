@@ -65,8 +65,7 @@ ul {
     list-style: none;
 }
 
-.wrapper,
-.bottom {
+.wrapper {
     max-width: 940px;
     margin: 0 auto;
     text-align: center;
@@ -80,7 +79,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 44px auto 100px;
+    margin: 44px auto 118px;
 }
 
 .nav_menu {
@@ -111,7 +110,7 @@ h2 {
     font-weight: 700;
     font-size: 40px;
     text-transform: uppercase;
-    line-height: 75px;
+    margin-bottom: 12px;    
 }
 
 h3 {
@@ -127,6 +126,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 120px;
 }
 
 .service_item {
@@ -187,26 +187,21 @@ h4 {
     background-image: url('../img/Icon-Locked.png');
 }
 
-section .wrapper {
-    margin-bottom: 120px;
-}
-
 .bottom_section {
-    background: #222222;
-    /* background-image: url(../img/Map\ Image.png); */
-    min-height: 677px;
-    position: relative;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
 }
 
-.bg_img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.bottom h2 {
-    color: #ffffff;
+form {
     padding-top: 93px;
+    padding-bottom: 115px;
+}
+
+.bottom_section h2 {
+    color: #ffffff;
 }
 
 .to_do_part input {
@@ -216,12 +211,21 @@ section .wrapper {
     border: 1px solid rgb(204, 204, 204);
     box-sizing: border-box;
 }
+
+.to_do_part {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 29px;
+}
+
 .inputs {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 459px;
-    height: 211px;
+    /* max-width: 459px; */
+    /* height: 211px; */
 }
   
 .to_do_part textarea {
@@ -252,15 +256,6 @@ button {
 button:active{
     transform: scale(0.9);
     transition: transform 0.2s linear;
-}
-
-
-.to_do_part {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 29px;
 }
 
 .to_do_part input::placeholder,
