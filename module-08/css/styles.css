@@ -43,6 +43,7 @@ a {
 
 .nav_item:hover {
     border: 2px solid rgba(255, 255, 255, 1);
+    transition: border 0.2s linear;
 }
 
 .nav_item:active {
@@ -50,7 +51,7 @@ a {
     transition: transform 0.2s linear;
 }
 
-.top_section h2 {
+.top_section h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -58,8 +59,9 @@ a {
     color: #fff;
 }
 
-p {
+.top_section h2, p {
     font-family: 'Roboto Light', sans-serif;
+    font-weight: 400;
     color: #fff;
 }
 
@@ -69,7 +71,12 @@ p {
     border-radius: 20px;
     background: #ff4e50;
     padding: 9px 0;
-    cursor: pointer;    
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s linear;
 }
 
 .button:active {
@@ -107,13 +114,13 @@ h3 {
 
 .partner {
     width: 215px;
-    margin-bottom: 28px;;
+    margin-bottom: 28px;
 }
 
-.partner:active {
+/* .partner:active {
     transform: scale(0.9);
     transition: transform 0.2s linear;
-}
+} */
 
 .img_box {
     width: 120px;
@@ -124,7 +131,7 @@ h3 {
 
 .img_box::after {
     position: absolute;
-    content: '';    
+    content: '';
     width: 40px;
     height: 40px;
     bottom: 0;
@@ -137,28 +144,25 @@ h3 {
 
 .partner-1 .img_box::after {
     background-color: #ff4e50;
-    background-image: url(../icon/icon\ 1.png);    
+    background-image: url(../icon/icon\ 1.png);
 }
 
 .partner-2 .img_box::after {
     background-color: #1cd7ad;
-    background-image: url(../icon/icon\ 2.png);    
+    background-image: url(../icon/icon\ 2.png);
 }
 
 .partner-3 .img_box::after {
     background-color: #ffa507;
-    background-image: url(../icon/icon\ 3.png);    
+    background-image: url(../icon/icon\ 3.png);
 }
 
 .partner-4 .img_box::after {
     background-color: #4e73db;
-    background-image: url(../icon/icon\ 4.png);    
+    background-image: url(../icon/icon\ 4.png);
 }
 
 .bottom_section .button {
     color: #ff4e50;
-    background-color: transparent; 
+    background-color: transparent;
 }
-
-
-
