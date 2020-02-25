@@ -74,7 +74,8 @@ a:hover {
 }
 
 .bottom_button:hover {
-    color: #ff4e50;
+    color: #ffffff;
+    background-color: #ff4e50;
 }
 
 .wrapper h2,
