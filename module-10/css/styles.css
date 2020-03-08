@@ -23,7 +23,7 @@ body {
 }
 
 .head-wrapper {
-    background-image: url(/module-10/img/Layer.jpg);
+    background-image: url(../img/Layer.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
