@@ -171,6 +171,7 @@ h4 {
 .service_item:hover {
     transform: scale(1.1);
 }
+
 .service_item:active {
     transform: scale(0.9);
 }
