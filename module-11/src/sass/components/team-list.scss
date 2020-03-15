@@ -1,0 +1,103 @@
+.team-list {
+  @extend %list;  
+  margin-bottom: 78px;
+}
+
+.team-card__img {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  background-color: $service-icon-color;
+  margin-bottom: 30px;
+
+  &:hover .team-img__front,
+  &:hover .team-social__list,
+  &:hover .team-img__overlay {
+    transform: translate(-10px, -10px);
+  }
+
+  &:hover .team-img__overlay {
+    opacity: 0.9;
+  }
+
+  &:hover .team-social {
+    opacity: 1;
+  }
+}
+
+.team-img__front {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  transition: transform 0.2s linear;
+}
+
+.team-img__overlay {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+  opacity: 0;
+  transition: transform 0.2s linear;
+}
+
+.team-social {
+  position: absolute;
+  min-width: 227px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    background-color: $header-hover-color;
+    transition: background-color 0.2s linear;
+
+    &:not(:last-child) {
+      margin-right: 1px;
+    }
+
+    &:hover {
+      background-color: $social-item-color;
+    }
+
+    &:hover .team-social__icon {
+      fill: $header-main-color;
+    }
+  }
+
+  &__list {
+    @extend %list;  
+    transition: transform 0.2s linear;
+  }
+
+  &__link {
+    @extend %link;  
+  }
+
+  &__icon {
+    width: 26px;
+    height: 26px;
+    fill: $social-item-color;
+    transition: fill 0.2s linear;
+  }
+}
+
+
+.team-card__name {
+  @extend %main-text;
+  font-size: 14px;
+  color: $main-main-color;
+  margin-bottom: 13px;
+}
+
+.team-card__position {
+  @extend %italic-text;
+  line-height: 1;
+  color: $team-card-position-color;
+}

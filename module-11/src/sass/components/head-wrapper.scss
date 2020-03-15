@@ -1,0 +1,13 @@
+.head-wrapper {
+  background-image: url(../images/Layer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  padding-top: 29px;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/Layer@2x.jpg);
+  }
+}

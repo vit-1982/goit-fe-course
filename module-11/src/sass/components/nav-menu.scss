@@ -1,0 +1,36 @@
+.nav-menu {
+  @extend %list;
+
+  &__link {
+    @extend %link;
+    border-bottom: 3px solid;
+    border-bottom-color: transparentize($header-hover-color, 1);
+    padding-bottom: 12px;
+    color: $header-main-color;
+
+    &--hover:hover {
+      color: $header-hover-color;
+      border-bottom-color: transparentize($header-hover-color, 0);
+    }
+  }
+
+  &__item {
+    @extend %main-text;
+    font-size: 14px;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+
+  &__icon {
+    fill: $header-main-color;
+    width: 18px;
+    height: 18px;
+
+    &:hover {
+      fill: $header-hover-color;
+    }
+  }
+
+}

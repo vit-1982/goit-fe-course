@@ -1,0 +1,28 @@
+.main-container {
+  @extend %container;
+
+  &__descr {
+    @extend %descr;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    @extend %title;
+    font-size: 30px;
+    position: relative;
+    margin-bottom: 108px;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 60px;
+      height: 3px;
+      background-color: $social-item-color;
+      top: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+%link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+%list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+%container {
+  max-width: 1201px;
+  margin: auto;
+}
+
+%descr {
+  font-family: $descr-font;
+}
+
+%title {
+  @extend %main-text;
+}
+
+%main-text {
+  font-family: $title-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+%main-descr-text {
+  font-family: 'Roboto Regular', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: $team-card-position-color;
+}
+
+%italic-text {
+  font-family: $italic-font;
+  font-style: italic;
+  font-size: 15px;
+}

@@ -1,0 +1,11 @@
+.button {
+  @extend %main-text;
+  color: $header-main-color;
+  border: 3px solid;
+  padding: 12px 30px;
+  transition-duration: 0.2s;
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

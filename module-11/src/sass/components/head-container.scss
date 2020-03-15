@@ -1,0 +1,22 @@
+.head-container {
+  @extend %container;
+  color: $header-main-color;
+
+  &__descr {
+    @extend %descr;
+    font-size: 72px;
+    margin-bottom: 42px;
+  }
+
+  &__title {
+    @extend %title;
+    font-size: 150px;
+    margin: 0;
+    margin-bottom: 109px;
+  }
+
+  &__button {
+    border-color: $header-main-color;
+    background: transparent;
+  }
+}

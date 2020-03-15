@@ -1,0 +1,35 @@
+.footer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  padding-bottom: 10px;
+
+  &__info {
+    font-family: $title-font;
+    font-weight: 500;
+    font-size: 14px;
+    color: $main-main-color;
+
+    &--red {
+      color: $social-item-color;
+    }
+  }
+
+  &__input {
+    @extend %italic-text;  
+    width: 230px;
+    border: $footer-border;
+    border-right: transparent;
+    padding: 10px 0 10px 12px;
+  }
+}
+
+.footer-right {
+  display: flex;
+}
+
+::placeholder {
+  color: $placeholder-color;
+}

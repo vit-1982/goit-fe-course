@@ -1,0 +1,10 @@
+.footer {
+  @extend %container;  
+  border-top: $footer-border;
+  width: 100%;
+
+  &__button {
+    border-color: $service-icon-color;
+    background: $service-icon-color;
+  }
+}
